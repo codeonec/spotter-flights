@@ -27,7 +27,7 @@ function Navigation() {
                         </Link>
                     </nav>
                     <Link
-                    to="https://github.com/codeonec"
+                    to="https://github.com/codeonec/spotter-flights"
                     className="inline-flex h-7 w-7"
                     target="_blank"
                 >

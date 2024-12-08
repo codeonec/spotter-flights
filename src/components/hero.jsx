@@ -3,7 +3,6 @@ import FlightSearchForm from "./flightSearch";
 import axios from "axios";
 
 function Hero() {
-    const [error, setError] = useState("");
     const [currentAirport, setCurrentAirport] = useState({});
     const [nearbyAirports, setNearbyAirports] = useState([]);
     useEffect(() => {
@@ -36,7 +35,6 @@ function Hero() {
                 setNearbyAirports(response?.data?.data?.nearby);
             } catch (error) {
                 console.error(error);
-                setError("Error getting nearby airports");
             }
         };
 

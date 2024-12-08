@@ -2,15 +2,11 @@ import {
     ArrowRightIcon,
     ArrowsRightLeftIcon,
 } from "@heroicons/react/24/outline";
-import axios from "axios";
-import { useEffect, useState } from "react";
 import { useLocation } from "react-router";
 
 function FlightDetails() {
     const location = useLocation();
-    const { flight, departure, destination } = location.state || {};
-
-    const [error, setError] = useState(null);
+    const { flight } = location.state || {};
 
     function calculateLayover(startTime, endTime) {
         const start = new Date(startTime);

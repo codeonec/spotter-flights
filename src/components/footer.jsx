@@ -16,7 +16,7 @@ function Footer() {
             </div>
             <div className="flex items-center justify-center">
                 <Link
-                    to="https://github.com/codeonec"
+                    to="https://github.com/codeonec/spotter-flights"
                     className="inline-block h-7 w-7"
                     target="_blank"
                 >
