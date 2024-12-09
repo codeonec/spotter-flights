@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import axios from "axios";
-import { MapPinIcon } from "@heroicons/react/24/outline";
+import { ArrowTurnDownLeftIcon, MapPinIcon } from "@heroicons/react/24/outline";
 
 function useOutsideAlerter(callBack) {
     const ref = useRef();
@@ -141,9 +141,9 @@ function AirportSearch({
                 >
                     {!loading && airPort.length === 0 && (
                         <li className="relative cursor-default select-none py-2 pl-3 pr-9 text-gray-900">
-                            <span className="ml-3 block font-normal">
+                            <span className="ml-3 block font-normal text-sm text-gray-600">
                                 Live search is currenlty unavailable due to
-                                request limits. Press &crarr; Enter to search.
+                                request limits. <br/><span className="mt-2">Press <ArrowTurnDownLeftIcon height={14} className="inline-block" /> Enter to search.</span>
                             </span>
                         </li>
                     )}

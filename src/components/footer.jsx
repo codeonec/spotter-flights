@@ -4,7 +4,7 @@ import { Link } from "react-router";
 function Footer() {
     return (
         <div className="flex justify-between py-5 px-4 max-w-5xl mx-auto border-t">
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 font-medium">
                 <div className="flex items-center0 text-sm gap-2 bg-blue-100 px-2 py-1 rounded-full">
                     <GlobeAltIcon height={20} />
                     English (United States)
